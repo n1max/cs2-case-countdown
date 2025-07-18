@@ -10,8 +10,9 @@ body {
   text-align: center;
 
   /* 🔮 Фиолетовый градиент для перелива */
-  background: linear-gradient(90deg, #a770ff, #f3c1ff, #000000);
-  background-size: 400% 400%;
+  background: linear-gradient(135deg, #a770ff, #f3c1ff, #000000);
+  background-size: 300% 300%;
+  background-position: 0% 0%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -32,12 +33,12 @@ body {
 
 @keyframes glowText {
   0% {
-    background-position: 100% 100%;
-  }
-  50% {
     background-position: 0% 0%;
   }
-  100% {
+  50% {
     background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
