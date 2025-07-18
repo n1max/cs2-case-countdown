@@ -1,7 +1,7 @@
 function updateCountdown() {
   const targetDate = new Date("2025-07-24T20:00:00+03:00");
   const now = new Date();
-  const timeLeft = targetDate.getTime() - now.getTime();
+  const timeLeft = targetDate - now;
   const countdownEl = document.getElementById("countdown");
   const messageEl = document.getElementById("birthdayMessage");
 
@@ -15,9 +15,7 @@ function updateCountdown() {
     const seconds = Math.floor((timeLeft / 1000) % 60);
 
     countdownEl.innerHTML =
-      `До открытия кейсов: ${days}д ${hours}ч ${minutes}м ${seconds}с
-      Пока что мы можем открыть 5/11 кейсов❤️
-      Спасибо каждому за донат`;
+      `До открытия кейсов: ${days}д ${hours}ч ${minutes}м ${seconds}с<br>5/11 кейсов ❤️ Спасибо каждому за донат`;
   }
 }
 
