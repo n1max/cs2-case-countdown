@@ -15,7 +15,7 @@ function updateCountdown() {
     const seconds = Math.floor((timeLeft / 1000) % 60);
 
     countdownEl.innerHTML =
-      `До открытия кейсов: ${days}д ${hours}ч ${minutes}м ${seconds}с<br>5/11 кейсов ❤️ Спасибо каждому за донат`;
+      `До открытия кейсов: ${days}д ${hours}ч ${minutes}м ${seconds}с<br>5/11 кейсов ❤️ Спасибо каждому за донат!`;
   }
 }
 window.onload = function () {
