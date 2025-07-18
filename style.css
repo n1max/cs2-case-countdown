@@ -33,12 +33,12 @@ body {
 
 @keyframes glowText {
   0% {
-    background-position: 0% 0%;
-  }
-  50% {
     background-position: 100% 100%;
   }
+  50% {
+    background-position: 30% 30%;
+  }
   100% {
-    background-position: 0% 0%;
+    background-position: 100% 100%;
   }
 }
