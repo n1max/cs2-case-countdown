@@ -1,5 +1,5 @@
 function updateCountdown() {
-  const targetDate = new Date("2025-07-24T20:00:00+03:00");
+  const targetDate = new Date("2028-07-24T20:00:00+03:00");
   const now = new Date();
   const timeLeft = targetDate - now;
   const countdownEl = document.getElementById("countdown");
@@ -15,7 +15,9 @@ function updateCountdown() {
     const seconds = Math.floor((timeLeft / 1000) % 60);
 
     countdownEl.innerHTML =
-      `До открытия кейсов: ${days}д ${hours}ч ${minutes}м ${seconds}с<br>5/11 кейсов ❤️ Спасибо каждому за донат!`;
+      //`До открытия кейсов: ${days}д ${hours}ч ${minutes}м ${seconds}с<br>5/11 кейсов ❤️ Спасибо каждому за донат!`;
+      `Стримлю каждый день, в основном ближе к 20:00 ❤️ Спасибо каждому за донат и подписки это очень мотивирует!
+      Буду очень рад вашей подписке на ТГ, там все новости и розыгрыши`;
   }
 }
 window.onload = function () {
